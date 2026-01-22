@@ -89,7 +89,6 @@ void move(Direction direction)
     switch (direction)
     {
         case Up:
-            // 上方向への移動
             for (int i = 6; i > 0; i--)
             {
                 for (int j = 0; j < 7; j++)
@@ -113,7 +112,6 @@ void move(Direction direction)
             break;
 
         case Down:
-            // 下方向への移動
             for (int i = 0; i < 6; i++)
             {
                 for (int j = 0; j < 7; j++)
@@ -137,7 +135,6 @@ void move(Direction direction)
             break;
 
         case Left:
-            // 左方向への移動
             for (int i = 6; i > 0; i--)
             {
                 for (int j = 0; j < 7; j++)
@@ -159,7 +156,6 @@ void move(Direction direction)
             break;
 
         case Right:
-            // 右方向への移動
             for (int i = 0; i < 6; i++)
             {
                 for (int j = 0; j < 7; j++)

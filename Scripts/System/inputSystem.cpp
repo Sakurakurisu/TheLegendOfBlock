@@ -83,22 +83,18 @@ Direction getMouseMovementDirection() {
 // キーボード入力を方向に変換する関数
 Direction getKeyBoardDirection()
 {
-    // 上キーまたはWキー
     if (GetAsyncKeyState(VK_UP) & 0x8000 || GetAsyncKeyState('W') & 0x8000)
     {
         return Up;
     }
-    // 下キーまたはSキー
     else if (GetAsyncKeyState(VK_DOWN) & 0x8000 || GetAsyncKeyState('S') & 0x8000)
     {
         return Down;
     }
-    // 左キーまたはAキー
     else if (GetAsyncKeyState(VK_LEFT) & 0x8000 || GetAsyncKeyState('A') & 0x8000)
     {
         return Left;
     }
-    // 右キーまたはDキー
     else if (GetAsyncKeyState(VK_RIGHT) & 0x8000 || GetAsyncKeyState('D') & 0x8000)
     {
         return Right;
